@@ -80,4 +80,3 @@ theme(:wong2)
 meanruns = mysamp(10, Int(1e4), 1000, [0.0,0.01,0.1]);
 plot(1:1000, meanruns, label = ["eps = 0", "eps = 0.01", "eps = 0.1"], 
         lw=2, ylims=(0,1.5), xlims=(0,1000), xlabel = "Steps", ylabel = "Average reward", legend=:bottomright)
-savefig("/Users/patrickcannon/src/github.com/pwcannon/bandit-experiments/10-armBandit2.pdf")
